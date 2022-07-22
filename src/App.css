@@ -43,7 +43,7 @@
     color: white;
     font-size: 24px;
     padding-top: 20px;
-    max-height: 300vh;
+    max-height: 600vh;
     background: radial-gradient(
             92.26% 92.26% at 49.27% 7.74%,
             #1a1321 0%,
@@ -211,5 +211,33 @@
         height: 300px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Skills */
+
+/* All sizes */
+
+.skill-img > img {
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    mix-blend-mode: lighten;
+}
+
+.s {
+}
+@media (min-width: 1300px) {
+    .skill-img > img {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .skill-img > img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
     }
 }

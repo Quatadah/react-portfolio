@@ -1,7 +1,7 @@
 import React from "react";
 import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
 
-const imports = 'import { AboutMe, Skills, Projects, Resume } from "Life"';
+const imports = `import { AboutMe, Skills, Projects, Resume } from "Life"`;
 const title = 'import { Quatadah } from "Nasdami"';
 const portfolioStatement = "const Portfolio = () => {";
 const portfolioStatement2 = "       return {";

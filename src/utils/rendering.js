@@ -14,6 +14,7 @@ const classMapper = {
     "<p>": "sc fw-bold fs-4",
     "</p>": "sc fw-bold fs-4",
     "<AboutMe": "sc",
+    "<Skills": "sc",
     AboutMe: "sc",
     Skills: "sc",
     Projects: "sc",

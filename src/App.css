@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap");
+
+:root {
+    --primary-color: #eb5757;
+    --secondary-color: #f2c94c;
+    --third-color: #bb6bd9;
+    --btn-color: #9b51e0;
+    --primary-font: "Courier Prime", monospace;
+    --secondary-font: "Inria";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pc {
+    color: var(--primary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sc {
+    color: var(--secondary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tc {
+    color: var(--third-color);
 }
 
-.App-link {
-  color: #61dafb;
+.line {
+    width: 100wh;
+    border: 2px solid rgba(155, 81, 224, 0.18);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section {
+    height: 100vh;
+}
+
+/* For all sizes */
+.navigation {
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.con {
+    font-family: var(--primary-font);
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    max-height: 300vh;
+    background: radial-gradient(
+            92.26% 92.26% at 49.27% 7.74%,
+            #1a1321 0%,
+            #371266 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.first-line {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+@media (min-width: 1300px) {
+    .content {
+        padding-top: 50px;
+    }
+    .navigation {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .con {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main-title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .first-line {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .ellipse1 {
+        /* Ellipse 1 */
+        position: relative;
+        width: 30rem;
+        height: 30rem;
+        bottom: 35rem;
+        background: linear-gradient(
+            180deg,
+            #c54b4b 0%,
+            rgba(197, 75, 75, 0) 100%
+        );
+        mix-blend-mode: lighten;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    .ellipse2 {
+        position: relative;
+        width: 25rem;
+        height: 25rem;
+        bottom: 15rem;
+        left: 10rem;
+        z-index: 2;
+        background: linear-gradient(
+            180deg,
+            #f2994a 0%,
+            rgba(242, 153, 74, 0) 100%
+        );
+        mix-blend-mode: lighten;
+        border-radius: 50%;
+    }
+
+    .ellipse3 {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        left: 22rem;
+        bottom: 2rem;
+        z-index: 1;
+
+        background: linear-gradient(
+            180deg,
+            #bb6bd9 0%,
+            rgba(187, 107, 217, 0) 100%
+        );
+        mix-blend-mode: lighten;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .content {
+    }
+
+    .navigation {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .con {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+
+    .main-title {
+        font-size: 36px;
+        line-height: 30px;
+    }
+
+    .first-line {
+        font-size: 46px;
+        line-height: 42px;
+    }
+}
+
+.parag {
+    padding-top: 25px;
+    width: 70%;
+    color: #c7baba;
+    line-height: 31px;
+    font-weight: 400;
+}
+
+.btn-perso {
+    border: 3px solid var(--btn-color);
+    border-radius: 15px;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: var(--btn-color);
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
+
+.btn-perso:hover {
+    background: var(--btn-color);
+    color: #c7baba;
+}
+
+/* About me */
+/*All sizes */
+.portfolio-img {
+    background: url(./assets/portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    mix-blend-mode: lighten;
+}
+
+@media (min-width: 1300px) {
+    .portfolio-img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .portfolio-img {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

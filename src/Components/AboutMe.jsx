@@ -11,13 +11,16 @@ const AboutUs = () => {
                 <div className="row ms-lg-5 ms-3 g-0 fw-bold">
                     <div className="col-lg-6">
                         {renderWithColors("img = {")}
-                        <div className="portfolio-img" alt="aboutme" />
+                        <div
+                            className="portfolio-img img-fluid"
+                            alt="aboutme"
+                        ></div>
                         {renderWithColorsComma("},")}
                     </div>
                     <div className="col-lg-6 align-self-center mt-lg-5">
                         {renderWithColors("text = {(")} <br />
                         {renderWithColors("     <p>")}
-                        <p>
+                        <p className="parag fw-bold">
                             Hi, I’m Quatadah Nasdami, I am 22 years old and I am
                             a computer science engineering student. I love web
                             development especially front-end, I like game
@@ -27,7 +30,8 @@ const AboutUs = () => {
                             To know more about me, check out my{" "}
                             <a
                                 href="#"
-                                className="text-decoration-none text-warning">
+                                className="text-decoration-none text-warning"
+                            >
                                 {"{<Resume />}"}
                             </a>
                             .

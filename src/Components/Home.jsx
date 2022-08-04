@@ -17,10 +17,10 @@ const Home = () => {
                 </p>
             </div>
             <div className="content">
-                <div className="row">
-                    <div className="col-lg-6">
+                <div className="row align-items-center">
+                    <div className="col-md-6 ">
                         <div>
-                            <div className="main-title text-white mt-4 mt-lg-1">
+                            <div className="main-title text-white mt-3 mt-sm-1 ">
                                 /*
                                 <br />
                                 <span className="first-line">
@@ -31,26 +31,29 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="parag">
+                            {" "}
                             Hi, I'm Quatadah Nasdami, I'm currently studying at
                             the higher France school ENSEIRB-MATMECA. <br /> */
                         </div>
 
-                        <div className="parag mt-5">
+                        <div className="parag my-5 py-5 my-md-3 py-md-3">
                             {renderWithColors(portfolioStatement)}
                             <br />
                             {renderWithColors(portfolioStatement2)}
                         </div>
-                        <div className="text-center mt-5 pt-5">
-                            <a href="#aboutme" class="btn-perso">
+                        <div className="text-center my-5 py-5">
+                            <a href="#aboutme" className="btn-perso">
                                 Scroll Down
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="drawing">
-                            <div className="ellipse3"></div>
-                            <div className="ellipse2"></div>
-                            <div className="ellipse1"></div>
+                    <div className="col-md-6 d-none d-md-block">
+                        <div className="img-container">
+                            <img
+                                src={require("../assets/landing-image.png")}
+                                alt="landing-image"
+                                className="img-fluid"
+                            />
                         </div>
                     </div>
                 </div>

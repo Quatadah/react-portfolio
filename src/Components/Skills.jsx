@@ -87,7 +87,7 @@ const Skills = () => {
                 {renderWithColors("<Skills")} <br />
             </div>
             <div className="content">
-                <div className="row text-center s">
+                <div className="row text-center s align-items-center">
                     <div className="col-lg-4">
                         <div className="skills-content text-lg-center text-start">
                             {renderWithColors("softwareDevelopment = {")}

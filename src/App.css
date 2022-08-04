@@ -28,13 +28,16 @@
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* For all sizes */
 .navigation {
     font-weight: 700;
-    line-height: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 .con {
@@ -44,12 +47,18 @@
     font-size: 24px;
     padding-top: 20px;
     max-height: 600vh;
+    overflow-x: auto;
     background: radial-gradient(
             92.26% 92.26% at 49.27% 7.74%,
             #1a1321 0%,
             #371266 100%
         )
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    font-size: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 .main-title {
@@ -60,93 +69,25 @@
 .first-line {
     font-family: var(--secondary-font);
     font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
 }
 
-@media (min-width: 1300px) {
-    .content {
-        padding-top: 50px;
-    }
-    .navigation {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
-    }
-    .con {
-        font-size: 24px;
-        padding-top: 20px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .main-title {
-        font-size: 48px;
-        line-height: 56px;
-    }
-
-    .first-line {
-        font-size: 60px;
-        line-height: 72px;
-    }
-
-    .ellipse1 {
-        /* Ellipse 1 */
-        position: relative;
-        width: 30rem;
-        height: 30rem;
-        bottom: 35rem;
-        background: linear-gradient(
-            180deg,
-            #c54b4b 0%,
-            rgba(197, 75, 75, 0) 100%
-        );
-        mix-blend-mode: lighten;
-        border-radius: 50%;
-        z-index: 3;
-    }
-
-    .ellipse2 {
-        position: relative;
-        width: 25rem;
-        height: 25rem;
-        bottom: 15rem;
-        left: 10rem;
-        z-index: 2;
-        background: linear-gradient(
-            180deg,
-            #f2994a 0%,
-            rgba(242, 153, 74, 0) 100%
-        );
-        mix-blend-mode: lighten;
-        border-radius: 50%;
-    }
-
-    .ellipse3 {
-        position: relative;
-        width: 15rem;
-        height: 15rem;
-        left: 22rem;
-        bottom: 2rem;
-        z-index: 1;
-
-        background: linear-gradient(
-            180deg,
-            #bb6bd9 0%,
-            rgba(187, 107, 217, 0) 100%
-        );
-        mix-blend-mode: lighten;
-        border-radius: 50%;
-    }
+.portfolio-img {
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
-@media screen and (max-width: 1300px) {
-    .content {
-    }
-
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {
     .navigation {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 700;
+        line-height: 20px;
     }
     .con {
-        font-size: 20px;
+        font-size: 26px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
@@ -154,20 +95,183 @@
 
     .main-title {
         font-size: 36px;
-        line-height: 30px;
+        line-height: 50px;
     }
 
     .first-line {
-        font-size: 46px;
+        font-size: 60px;
         line-height: 42px;
+    }
+    .parag {
+        font-size: 24px;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+    .portfolio-img {
+        width: 300px;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .content {
+        padding-top: 10px;
+    }
+    .navigation {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .con {
+        font-size: 24px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-title {
+        font-size: 34px;
+        line-height: 25px;
+    }
+
+    .first-line {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .parag {
+        font-size: 24px;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+    .portfolio-img {
+        width: 350px;
+        height: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 1030.98px) {
+    .content {
+        padding-top: 40px;
+    }
+    .navigation {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .con {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main-title {
+        font-size: 38px;
+        line-height: 32px;
+    }
+
+    .first-line {
+        font-size: 58px;
+        line-height: 72px;
+    }
+
+    .parag {
+        font-size: 24px;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+
+    .portfolio-img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+    .content {
+        padding-top: 40px;
+    }
+    .navigation {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .con {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main-title {
+        font-size: 38px;
+        line-height: 32px;
+    }
+
+    .first-line {
+        font-size: 60px;
+        line-height: 52px;
+    }
+
+    .img-container {
+        width: 65%;
+    }
+    .parag {
+        font-size: 24px;
+        line-height: 20px;
+        padding-top: 25px;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1699.98px) {
+    .content {
+        padding-top: 50px;
+    }
+    .navigation {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .con {
+        font-size: 32px;
+        padding-top: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main-title {
+        font-size: 42px;
+        line-height: 36px;
+    }
+
+    .first-line {
+        font-size: 62px;
+        line-height: 72px;
+    }
+
+    .img-container {
+        width: 80%;
+    }
+
+    .parag {
+        font-size: 26px;
+        line-height: 40px;
+        padding-top: 25px;
     }
 }
 
 .parag {
-    padding-top: 25px;
-    width: 70%;
+    width: 90%;
     color: #c7baba;
-    line-height: 31px;
+    line-height: 30px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -194,24 +298,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    border-radius: 100%;
     mix-blend-mode: lighten;
-}
-
-@media (min-width: 1300px) {
-    .portfolio-img {
-        width: 500px;
-        height: 500px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .portfolio-img {
-        width: 300px;
-        height: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /* Skills */

@@ -1,70 +1,29 @@
 import React from "react";
 import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
+import DevIcon from "devicon-react-svg";
 
-const softwareSkills = [
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-];
+const softwareSkills = ["c", "c++", "c#", "cpp", "c#", "java"];
 
 const frontEndSkills = [
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
+    "html5",
+    "css3",
+    "javascript",
+    "figma",
+    "vuejs",
+    "bootstrap",
+    "tailwindcss",
 ];
 
-const backEndSkills = [
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-];
+const backEndSkills = [];
 
-const mobileDevSkills = [
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-];
+const mobileDevSkills = ["react-native"];
 
-const otherSkills = [
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-    require("../assets/portfolio.jpg"),
-];
+const otherSkills = [];
+
+const devIconStyle = {
+    fill: "yellow",
+    width: "50px",
+};
 
 const renderSkills = (skills) => {
     return (
@@ -72,7 +31,7 @@ const renderSkills = (skills) => {
             {skills.map((skill, index) => {
                 return (
                     <span className="skill-img" alt="skill" key={index}>
-                        <img src={skill} alt="skill" />
+                        <DevIcon icon={skill} style={devIconStyle} />
                     </span>
                 );
             })}
@@ -123,6 +82,9 @@ const Skills = () => {
                             {renderWithColorsComma("},")}
                         </div>
                     </div>{" "}
+                </div>
+                <div className="navigation mt-lg-5 pt-lg-4">
+                    {renderWithColors("/>")}
                 </div>
             </div>
         </div>

@@ -1,8 +1,9 @@
 import React from "react";
 import Home from "./Components/Home";
 import AboutMe from "./Components/AboutMe";
-import "./App.css";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import "./App.css";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <div className="line"></div>
             <Skills />
             <div className="line"></div>
+            <Projects />
         </div>
     );
 };

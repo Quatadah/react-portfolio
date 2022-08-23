@@ -1,5 +1,37 @@
+import { render } from "@testing-library/react";
 import React from "react";
 import { renderWithColors } from "../utils/rendering";
+
+const projects = [
+    {
+        name: "projectOne",
+        image: require("../assets/mindmap.png"),
+        title: "Project title",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+    },
+    {
+        name: "projectTwo",
+        image: require("../assets/rungame.png"),
+        title: "Project title",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+    },
+    {
+        name: "projectThree",
+        image: require("../assets/mindmap.png"),
+        title: "Project title",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+    },
+    {
+        name: "projectFour",
+        image: require("../assets/mindmap.png"),
+        title: "Project title",
+        description:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+    },
+];
 
 const Projects = () => {
     return (
@@ -9,22 +41,35 @@ const Projects = () => {
             </div>
             <div className="content">
                 <div className="row">
-                    <div className=" col-md-6">
-                        <img
-                            className="project-image "
-                            src={require("../assets/mindmap.png")}
-                        />
-                    </div>
-                    <div className="project-info col-md-6">
-                        <h1>Project title</h1>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Laboriosam quas reprehenderit cupiditate
-                            similique nulla necessitatibus repudiandae quaerat
-                            expedita optio perspiciatis a vitae voluptatibus,
-                            accusantium id, totam ipsam autem deleniti magnam.
-                        </p>
-                    </div>
+                    {projects.map((project, index) => {
+                        return (
+                            <>
+                                <div>
+                                    {project.name} = {renderWithColors("{(")}
+                                </div>
+                                <div className="col-md-6 my-4">
+                                    <img
+                                        className="project-image "
+                                        src={project.image}
+                                    />
+                                </div>
+                                <div className="project-info col-md-6">
+                                    <h1 className="text-center">
+                                        {renderWithColors("<h1>")}
+                                        {project.title}{" "}
+                                        {renderWithColors("</h1>")}
+                                    </h1>
+
+                                    <p>
+                                        {renderWithColors("<p>")}
+                                        {project.description}{" "}
+                                        {renderWithColors("</p>")}
+                                    </p>
+                                </div>
+                                <div>{renderWithColors(")},")}</div>
+                            </>
+                        );
+                    })}
                 </div>
             </div>
         </div>

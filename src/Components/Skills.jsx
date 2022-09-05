@@ -2,23 +2,42 @@ import React from "react";
 import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
 import DevIcon from "devicon-react-svg";
 
-const softwareSkills = ["c", "c++", "c#", "cpp", "c#", "java"];
-
-const frontEndSkills = [
-    "html5",
-    "css3",
-    "javascript",
-    "figma",
-    "vuejs",
-    "bootstrap",
-    "tailwindcss",
+const softwareSkills = [
+    require("../assets/c.png"),
+    require("../assets/csharp.png"),
+    require("../assets/python.png"),
+    require("../assets/java.png"),
+    require("../assets/php.png"),
+    require("../assets/javascript.png"),
+    require("../assets/typescript.png"),
 ];
 
-const backEndSkills = [];
+const frontEndSkills = [
+    require("../assets/html5.png"),
+    require("../assets/css3.png"),
+    require("../assets/javascript.png"),
+    require("../assets/jquery.png"),
+    require("../assets/react.png"),
+    require("../assets/bootstrap.png"),
+];
 
-const mobileDevSkills = ["react-native"];
+const backEndSkills = [
+    require("../assets/php.png"),
+    require("../assets/javascript.png"),
+    require("../assets/python.png"),
+    require("../assets/mongodb.png"),
+    require("../assets/mysql.png"),
+    require("../assets/postgresql.png"),
+];
 
-const otherSkills = [];
+const mobileDevSkills = [];
+
+const otherSkills = [
+    require("../assets/git.png"),
+    require("../assets/npm.png"),
+    require("../assets/linux.png"),
+    require("../assets/unity.png"),
+];
 
 const devIconStyle = {
     fill: "yellow",
@@ -31,7 +50,7 @@ const renderSkills = (skills) => {
             {skills.map((skill, index) => {
                 return (
                     <span className="skill-img" alt="skill" key={index}>
-                        <DevIcon icon={skill} style={devIconStyle} />
+                        <img src={skills[index]} />
                     </span>
                 );
             })}

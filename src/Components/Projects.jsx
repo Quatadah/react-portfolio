@@ -19,7 +19,7 @@ const projects = [
     },
     {
         name: "projectThree",
-        image: require("../assets/mindmap.png"),
+        image: require("../assets/velo.png"),
         title: "Project title",
         description:
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
@@ -44,9 +44,9 @@ const Projects = () => {
                     {projects.map((project, index) => {
                         return (
                             <>
-                                <div>
+                                <h4>
                                     {project.name} = {renderWithColors("{(")}
-                                </div>
+                                </h4>
                                 <div className="col-md-6 my-4">
                                     <img
                                         className="project-image "
@@ -70,6 +70,9 @@ const Projects = () => {
                             </>
                         );
                     })}
+                </div>
+                <div className="navigation mt-lg-5 pt-lg-4">
+                    {renderWithColors("/>")}
                 </div>
             </div>
         </div>

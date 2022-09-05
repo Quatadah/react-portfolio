@@ -2,6 +2,21 @@ import React from "react";
 import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
 
 const imports = `import { AboutMe, Skills, Projects, Resume } from "Life"`;
+const pages = [
+    { name: "AboutMe,", href: "#aboutme" },
+    {
+        name: "Skills,",
+        href: "#skills",
+    },
+    {
+        name: "Projects,",
+        href: "#projects",
+    },
+    {
+        name: "Resume",
+        href: "#resume",
+    },
+];
 const title = 'import { Quatadah } from "Nasdami"';
 const portfolioStatement = "const Portfolio = () => {";
 const portfolioStatement2 = "       return {";
@@ -9,7 +24,15 @@ const portfolioStatement2 = "       return {";
 const Home = () => {
     return (
         <div id="home" className="section">
-            <p className="navigation">{renderWithColorsComma(imports)}</p>
+            <p className="navigation">
+                {renderWithColors("import {")}{" "}
+                {pages.map((page) => (
+                    <a href={page.href} className="text-decoration-none">
+                        {renderWithColorsComma(page.name)}
+                    </a>
+                ))}
+                {renderWithColors('} from "Life"')}
+            </p>
             <div className="line"></div>
             <div className="title">
                 <p className="navigation pt-lg-3 pt-2">
@@ -43,7 +66,7 @@ const Home = () => {
                         </div>
                         <div className="text-center my-5 py-5">
                             <a href="#aboutme" className="btn-perso">
-                                Scroll Down
+                                Get Started
                             </a>
                         </div>
                     </div>

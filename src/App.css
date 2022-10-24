@@ -10,6 +10,10 @@
     --secondary-font: "Inria";
 }
 
+html {
+    overflow-x: initial !important;
+}
+
 .pc {
     color: var(--primary-color);
 }

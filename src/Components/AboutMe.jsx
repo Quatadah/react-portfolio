@@ -22,7 +22,7 @@ const AboutUs = () => {
                         {renderWithColors("     <p>")}
                         <p className="parag fw-bold">
                             Hi, I’m Quatadah Nasdami, I am 22 years old and I am
-                            a computer science engineering student. I love web
+                            a software engineering student. I love web
                             development especially front-end, I like game
                             development as well. I am currently studying my last
                             year at the french higher school of engineering

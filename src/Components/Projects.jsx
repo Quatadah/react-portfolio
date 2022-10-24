@@ -4,32 +4,18 @@ import { renderWithColors } from "../utils/rendering";
 
 const projects = [
     {
-        name: "projectOne",
+        name: "mindYourMap",
         image: require("../assets/mindmap.png"),
-        title: "Project title",
+        title: "MindYourMap",
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+            "Interactive mind map application that allows users to create, edit, and share mind maps. Built with simple Html Css and Javascript.",
     },
     {
-        name: "projectTwo",
+        name: "typingRace",
         image: require("../assets/rungame.png"),
-        title: "Project title",
+        title: "TypingRace",
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
-    },
-    {
-        name: "projectThree",
-        image: require("../assets/velo.png"),
-        title: "Project title",
-        description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
-    },
-    {
-        name: "projectFour",
-        image: require("../assets/mindmap.png"),
-        title: "Project title",
-        description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas reprehenderit cupiditate similique nulla necessitatibus repudiandae quaerat expedita optio perspiciatis a vitae voluptatibus, accusantium id, totam ipsam autem deleniti magnam.",
+            "Simple typing game that allows users to improve their typing speed, built with React, Bootstrap. Also, includes 3 languages : English, French and Arabic.",
     },
 ];
 

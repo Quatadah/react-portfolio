@@ -26,8 +26,12 @@ const Home = () => {
         <div id="home" className="section">
             <p className="navigation">
                 {renderWithColors("import {")}{" "}
-                {pages.map((page) => (
-                    <a href={page.href} className="text-decoration-none">
+                {pages.map((page, index) => (
+                    <a
+                        key={index}
+                        href={page.href}
+                        className="text-decoration-none"
+                    >
                         {renderWithColorsComma(page.name)}
                     </a>
                 ))}

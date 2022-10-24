@@ -13,11 +13,7 @@ const socialMedia = [
     },
     {
         name: "linkedin",
-        link: "https://linkedin.com/quatadah",
-    },
-    {
-        name: "gmail",
-        link: "quatadah.nasdami@gmail.com",
+        link: "https://www.linkedin.com/in/quatadah-nasdami-0a5212187",
     },
     {
         name: "instagram",
@@ -34,13 +30,17 @@ const Contact = () => {
             <div className="content">
                 <div className="row">
                     <div className="col-5 mx-auto">
-                        <ul className="list-group">
-                            {socialMedia.map((social) => (
-                                <li className="list-group-item">
+                        <ul className="list-group ">
+                            {socialMedia.map((social, index) => (
+                                <li
+                                    className="list-group-item bg-transparent text-center text-white border-0"
+                                    key={index}
+                                >
                                     {social.name} ={" "}
                                     <a
                                         href={social.link}
                                         className="text-decoration-none"
+                                        target={"_blank"}
                                     >
                                         {renderWithColors(
                                             `{ ${social.name}Link }`

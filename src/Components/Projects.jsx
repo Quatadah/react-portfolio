@@ -17,6 +17,13 @@ const projects = [
         description:
             "Simple typing game that allows users to improve their typing speed, built with React, Bootstrap. Also, includes 3 languages : English, French and Arabic.",
     },
+    {
+        name: "portfolioWebSite",
+        image: require("../assets/portfolio.png"),
+        title: "Portfolio",
+        description:
+            "My portfolio website, built with React, Bootstrap, designed with Figma.",
+    },
 ];
 
 const Projects = () => {
@@ -40,11 +47,11 @@ const Projects = () => {
                                     />
                                 </div>
                                 <div className="project-info col-md-6">
-                                    <h1 className="text-center">
+                                    <h2 className="text-center">
                                         {renderWithColors("<h1>")}
                                         {project.title}{" "}
                                         {renderWithColors("</h1>")}
-                                    </h1>
+                                    </h2>
 
                                     <p>
                                         {renderWithColors("<p>")}

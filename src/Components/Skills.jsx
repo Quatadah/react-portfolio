@@ -3,6 +3,7 @@ import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
 import DevIcon from "devicon-react-svg";
 
 const softwareSkills = [
+    require("../assets/clang.png"),
     require("../assets/c.png"),
     require("../assets/csharp.png"),
     require("../assets/python.png"),
@@ -18,21 +19,28 @@ const frontEndSkills = [
     require("../assets/javascript.png"),
     require("../assets/jquery.png"),
     require("../assets/react.png"),
+    require("../assets/vuejs.png"),
     require("../assets/bootstrap.png"),
+    require("../assets/next.png"),
+    require("../assets/vite.png"),
 ];
 
 const backEndSkills = [
     require("../assets/php.png"),
-    require("../assets/javascript.png"),
-    require("../assets/python.png"),
+    require("../assets/node.png"),
+    require("../assets/dotnet.png"),
     require("../assets/mongodb.png"),
     require("../assets/mysql.png"),
     require("../assets/postgresql.png"),
 ];
 
-const mobileDevSkills = [];
+const mobileDevSkills = [
+    require("../assets/react.png"),
+    require("../assets/android.png"),
+];
 
 const otherSkills = [
+    require("../assets/figma.png"),
     require("../assets/git.png"),
     require("../assets/npm.png"),
     require("../assets/linux.png"),

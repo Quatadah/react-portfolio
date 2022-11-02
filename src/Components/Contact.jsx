@@ -30,10 +30,10 @@ const Contact = () => {
             <div className="content">
                 <div className="row">
                     <div className="col-5 mx-auto">
-                        <ul className="list-group ">
+                        <div className="fs-3">
                             {socialMedia.map((social, index) => (
-                                <li
-                                    className="list-group-item bg-transparent text-center text-white border-0"
+                                <div
+                                    className="bg-transparent text-center text-white border-0"
                                     key={index}
                                 >
                                     {social.name} ={" "}
@@ -46,9 +46,9 @@ const Contact = () => {
                                             `{ ${social.name}Link }`
                                         )}
                                     </a>
-                                </li>
+                                </div>
                             ))}
-                        </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="navigation mt-lg-5 pt-lg-4">

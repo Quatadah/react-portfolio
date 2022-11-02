@@ -19,7 +19,6 @@ const App = () => {
             <Projects />
             <div className="line"></div>
             <Contact />
-            <Footer />
         </div>
     );
 };

@@ -32,14 +32,14 @@ html {
 }
 
 .section {
-    min-height: 100vh;
+    overflow: hidden;
 }
 
 /* For all sizes */
 .navigation {
     font-weight: 700;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -50,8 +50,6 @@ html {
     color: white;
     font-size: 24px;
     padding-top: 20px;
-    max-height: 600vh;
-    overflow-x: auto;
     background: radial-gradient(
             92.26% 92.26% at 49.27% 7.74%,
             #1a1321 0%,
@@ -369,3 +367,5 @@ html {
         right: 40px;
     }
 }
+
+/* Contact */

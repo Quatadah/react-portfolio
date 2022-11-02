@@ -11,7 +11,7 @@ const projects = [
             "Interactive mind map application that allows users to create, edit, and share mind maps. Built with simple Html Css and Javascript.",
     },
     {
-        name: "m eet",
+        name: "meet",
         image: require("../assets/meet.png"),
         title: "Meet",
         description:

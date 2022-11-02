@@ -68,7 +68,10 @@ const renderSkills = (skills) => {
 
 const Skills = () => {
     return (
-        <div id="skills" className="section mt-2 mt-lg-4">
+        <div
+            id="skills"
+            className="section mt-2 mt-lg-4 justify-content-center"
+        >
             <div className="navigation">
                 {renderWithColors("<Skills")} <br />
             </div>

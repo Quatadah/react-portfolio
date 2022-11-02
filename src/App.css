@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
 
 :root {
     --primary-color: #eb5757;
@@ -7,7 +8,8 @@
     --third-color: #bb6bd9;
     --btn-color: #9b51e0;
     --primary-font: "Courier Prime", monospace;
-    --secondary-font: "Inria";
+    --secondary-font: Inria;
+    --third-font: Georama, sans-serif;
 }
 
 html {
@@ -32,14 +34,17 @@ html {
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    height: 100vh;
 }
 
 /* For all sizes */
 .navigation {
     font-weight: 700;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -81,6 +86,22 @@ html {
     margin-right: auto;
     margin-left: auto;
 }
+
+.parag {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #c7baba;
+    font-size: 24px;
+}
+
+.aboutmeparagraph {
+    font-family: var(--secondary-font);
+    font-family: var(--third-font);
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (min-width: 575.98px) {
     .navigation {
@@ -109,6 +130,11 @@ html {
         line-height: 20px;
         padding-top: 25px;
     }
+
+    .aboutmeparagraph {
+        font-size: 20px;
+    }
+
     .portfolio-img {
         width: 300px;
         height: 300px;
@@ -146,6 +172,10 @@ html {
         font-size: 24px;
         line-height: 20px;
         padding-top: 25px;
+    }
+
+    .aboutmeparagraph {
+        font-size: 22px;
     }
     .portfolio-img {
         width: 350px;
@@ -186,6 +216,9 @@ html {
         font-size: 24px;
         line-height: 20px;
         padding-top: 25px;
+    }
+    .aboutmeparagraph {
+        font-size: 24px;
     }
 
     .portfolio-img {
@@ -269,17 +302,9 @@ html {
     }
 }
 
-.parag {
-    width: 90%;
-    color: #c7baba;
-    line-height: 30px;
-    font-size: 22px;
-    font-weight: 400;
-}
-
 .btn-perso {
     border: 3px solid var(--btn-color);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px 40px;
     text-decoration: none;
     color: var(--btn-color);
@@ -314,8 +339,6 @@ html {
     mix-blend-mode: lighten;
 }
 
-.s {
-}
 @media (min-width: 1300px) {
     .skill-img > img {
         width: 70px;

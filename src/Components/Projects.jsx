@@ -11,7 +11,7 @@ const projects = [
             "Interactive mind map application that allows users to create, edit, and share mind maps. Built with simple Html Css and Javascript.",
     },
     {
-        name: "Meet",
+        name: "m eet",
         image: require("../assets/meet.png"),
         title: "Meet",
         description:
@@ -35,7 +35,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div id="projects" className="section mt-2 mt-lg-4">
+        <div id="projects" className="mt-2 mt-lg-4 min-vh-100 ">
             <div className="navigation">
                 {renderWithColors("<Projects")} <br />
             </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                                         {renderWithColors("</h1>")}
                                     </h2>
 
-                                    <p>
+                                    <p className="aboutmeparagraph">
                                         {renderWithColors("<p>")}
                                         {project.description}{" "}
                                         {renderWithColors("</p>")}

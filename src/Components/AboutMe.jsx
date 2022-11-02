@@ -3,7 +3,10 @@ import { renderWithColors, renderWithColorsComma } from "../utils/rendering";
 
 const AboutUs = () => {
     return (
-        <div id="aboutme" className="section mt-2 mt-lg-4">
+        <div
+            id="aboutme"
+            className="section mt-2 mt-lg-4 justify-content-center"
+        >
             <div className="navigation">
                 {renderWithColors("<AboutMe ")} <br />
             </div>
@@ -19,13 +22,13 @@ const AboutUs = () => {
                     </div>
                     <div className="col-lg-6 align-self-center mt-lg-5">
                         {renderWithColors("text = {(")} <br />
-                        {renderWithColors("     <p>")}
-                        <p className="parag fw-bold">
+                        {renderWithColors("<p>")}
+                        <p className="aboutmeparagraph d-inline">
                             Hi, I’m Quatadah Nasdami, I am 22 years old and I am
                             a software engineering student. I love web
-                            development especially front-end, I like game
-                            development as well. I am currently studying my last
-                            year at the french higher school of engineering
+                            development, UI|UX, and mobile development. I like
+                            game development as well. I am currently studying my
+                            last year at the french higher school of engineering
                             ENSEIRB-MATMECA. <br />
                             To know more about me, check out my{" "}
                             <a

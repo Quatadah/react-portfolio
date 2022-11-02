@@ -19,10 +19,10 @@ const classMapper = {
     "/>": "sc fw-bold",
     "<p>": "sc fw-bold fs-4",
     "</p>": "sc fw-bold fs-4",
-    "<AboutMe": "sc",
-    "<Skills": "sc",
-    "<Projects": "sc",
-    "<Contact": "sc",
+    "<AboutMe": "sc fs-4",
+    "<Skills": "sc fs-4",
+    "<Projects": "sc fs-4",
+    "<Contact": "sc fs-4",
     "<h1>": "sc fw-bold",
     "</h1>": "sc fw-bold",
     AboutMe: "sc",
@@ -32,7 +32,7 @@ const classMapper = {
     Quatadah: "sc",
     Portfolio: "sc",
     '"Nasdami"': "tc",
-    '"Life"': "tc",
+    '"Portfolio"': "tc",
     return: "tc fw-bold",
 };
 

@@ -23,14 +23,14 @@ const socialMedia = [
 
 const Contact = () => {
     return (
-        <div id="contact" className="section mt-2 mt-lg-4">
+        <div id="contact" className="mt-2 mt-lg-4 py-3">
             <div className="navigation">
                 {renderWithColors("<Contact")} <br />
             </div>
             <div className="content">
                 <div className="row">
-                    <div className="col-5 mx-auto">
-                        <div className="fs-3">
+                    <div className=" mx-auto">
+                        <div className="fs-4">
                             {socialMedia.map((social, index) => (
                                 <div
                                     className="bg-transparent text-center text-white border-0"
